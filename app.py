@@ -42,19 +42,22 @@ st.markdown("""
     }
     .form {
         border: 1px solid #ddd;
-        padding: 25px;
-        border-radius: 15px;
+        padding: 30px;
+        border-radius: 10px;
         background-color: #fff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 20px;
+        margin: 20px auto;
+        max-width: 600px;
     }
     .review {
         margin-top: 15px;
-        padding: 15px;
+        padding: 20px;
         border-radius: 10px;
         background-color: #fff;
         border: 1px solid #ddd;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 10px auto;
     }
     .rating {
         color: #f5a623;
@@ -106,7 +109,3 @@ for review in st.session_state['reviews']:
 
 # Footer
 st.markdown("<div class='footer'>Thank you for visiting our Slipper Shop!</div>", unsafe_allow_html=True)
-
-
-
-
